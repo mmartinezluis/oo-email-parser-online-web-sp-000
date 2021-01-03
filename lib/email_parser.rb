@@ -13,14 +13,14 @@ class EmailAddressParser
   end
 
   def parse
-    if @email_addresses.include?(",") && @email_addresses.include?(" ")
+  #  if @email_addresses.include?(",") && @email_addresses.include?(" ")
       parsed_array = @email_addresses.split(/[(,)( )]/).delete_if {|i| i == ""}.uniq
-    elsif @email_addresses.include?(",")
-      parsed_array = @email_addresses.split(",").collect {|i| i.strip}.uniq
-    elsif @email_addresses.include?(" ")
-      parsed_array = @email_addresses.split(" ").collect {|i| i.strip}.uniq
-    end
-
+  #  elsif @email_addresses.include?(",")
+  #    parsed_array = @email_addresses.split(",").collect {|i| i.strip}.uniq
+  #  elsif @email_addresses.include?(" ")
+  #    parsed_array = @email_addresses.split(" ").collect {|i| i.strip}.uniq
+  #  end
+binding.pry
   end
 
 end
