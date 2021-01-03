@@ -20,7 +20,7 @@ class EmailAddressParser
   #  elsif @email_addresses.include?(" ")
   #    parsed_array = @email_addresses.split(" ").collect {|i| i.strip}.uniq
   #  end
-binding.pry
+
   end
 
 end
