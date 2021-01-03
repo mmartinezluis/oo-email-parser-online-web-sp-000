@@ -21,6 +21,7 @@ class EmailAddressParser
   #    parsed_array = @email_addresses.split(" ").collect {|i| i.strip}.uniq
   #  end
 
+  #Method 2   @email_addresses.split(/, | /).uniq
   end
 
 end
